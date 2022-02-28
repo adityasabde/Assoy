@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="footer.css" />
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="profile.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+
+    <!----===== Boxicons CSS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <!--<title>Dashboard Sidebar Menu</title>-->
+<title>Profile</title>
+    <style>
+      
+      .container {
+        display: grid;
+        grid-gap: 11px;
+        grid-template-columns: repeat(auto-fit, 309px);
+        grid-template-rows: repeat(2, 492px);
+        justify-content: space-around;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        font-family: montserrat;
+        /* font-family: 'Prompt', sans-serif; */
+      }
+      .nav {
+        overflow: hidden;
+        position: relative;
+        top: 0px;
+        display: flex;
+        height: 80px;
+        width: 100%;
+        background: #1b1b1b;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px 0 100px;
+        flex-wrap: wrap;
+      }
+      .nav .logo {
+        color: #fff;
+        font-size: 35px;
+        font-weight: 600;
+      }
+      .nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+      }
+      .nav ul li {
+        margin: 0 5px;
+      }
+      .nav ul li a {
+        color: #f2f2f2;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 8px 15px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+      }
+      .nav ul li a.active,
+      .nav ul li a:hover {
+        color: #111;
+        background: #fff;
+      }
+      .nav .menu-btn i {
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+        display: none;
+      }
+      input[type="checkbox"] {
+        display: none;
+      }
+      @media (max-width: 1000px) {
+        .nav {
+          padding: 0 40px 0 50px;
+        }
+      }
+      @media (max-width: 920px) {
+        .nav .menu-btn i {
+          display: block;
+          overflow: hidden;
+        }
+        #click:checked ~ .menu-btn i:before {
+          content: "\f00d";
+        }
+        .nav ul {
+          position: fixed;
+          top: 80px;
+          left: -100%;
+          background: #111;
+          height: 100vh;
+          width: 100%;
+          text-align: center;
+          display: block;
+          transition: all 0.3s ease;
+        }
+        #click:checked ~ ul {
+          left: 0;
+        }
+        .nav ul li {
+          width: 100%;
+          margin: 40px 0;
+        }
+        .nav ul li a {
+          width: 100%;
+          margin-left: -100%;
+          display: block;
+          font-size: 20px;
+          transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        #click:checked ~ ul li a {
+          margin-left: 0px;
+        }
+        .nav ul li a.active,
+        .nav ul li a:hover {
+          background: none;
+          color: cyan;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="logo.png" alt="" />
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">ASSOY</span>
+            <span class="profession">Lets Learn Together</span>
+          </div>
+        </div>
+
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+            <input type="text" placeholder="Search..." />
+          </li>
+
+          <ul class="menu-links">
+            <li class="nav-link">
+              <img src="" alt="">
+              <a href="#">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span class="text nav-text">Revenue</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-bell icon"></i>
+                <span class="text nav-text">Notifications</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-pie-chart-alt icon"></i>
+                <span class="text nav-text">Analytics</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">Likes</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">Wallets</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+          <li class="">
+            <a href="#">
+              <i class="bx bx-log-out icon"></i>
+              <span class="text nav-text">Logout</span>
+            </a>
+          </li>
+
+          <li class="mode">
+            <div class="sun-moon">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">Dark mode</span>
+
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section class="home">
+      <div class="text">
+        <!-- /////////////////////////////////////////// -->
+<!-- navbar  -->
+        <nav class="nav">
+          <div class="logo">ASSOY</div>
+          <input type="checkbox" id="click" />
+          <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Log-In</a></li>
+          </ul>
+        </nav>
+
+        <br />
+        <br />
+
+<!-- middle portion -->
+        <div class="b">
+          <div class="container">
+            <div class="card">
+              <div class="circle">
+                <h2>Java Course</h2>
+              </div>
+              <div class="content">
+                <p>
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.
+                </p>
+                <a href="CourseInfoPage.html">Let's Start</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="circle">
+                <h2>SQL</h2>
+              </div>
+              <div class="content">
+                <p>
+                  Lsed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.
+                </p>
+                <a href="#">Let's Start</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="circle">
+                <h2>DATA SCIENCE</h2>
+              </div>
+              <div class="content">
+                <p>Lorempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="circle">
+                <h2>COGNITUDE APTITUDE</h2>
+              </div>
+              <div class="content">
+                <p>
+                  orempor incididunt ut labor orem iunt ut labore et dolore
+                  magna aliqua.
+                </p>
+                <a href="#">Let's Start</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="circle">
+                <h2>OBJECT ORIENTED PROGRAMMING</h2>
+              </div>
+              <div class="content">
+                <p>Lorem ipsum,incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#">Let's Start</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="circle">
+                <h2>THEORY OF COMPUTATION</h2>
+              </div>
+              <div class="content">
+                <p>
+                  Lorem ipsempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#">Let's Start</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /////////////////////////////////// -->
+      </div>
+
+      <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>
+                Happy Coding Is the group Of 5 Members who are piro player In
+                Coding and Future Entrepreneur of the decade.
+              </p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>1234567890</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>@vit.edu</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Menu</div>
+            <div><a href="#">12th Syallbus</a></div>
+            <div><a href="#">Under-Graduate Syallbus</a></div>
+            <div><a href="#">Career Guidance</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address" />
+              <input type="submit" name="" value="Send" />
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>
+            Copyright &#169; 2022 <a href="#">HappyCoding</a> All rights
+            reserved
+          </p>
+        </div>
+      </footer>
+    </section>
+
+    <script>
+      const body = document.querySelector("body"),
+        sidebar = body.querySelector("nav"),
+        toggle = body.querySelector(".toggle"),
+        searchBtn = body.querySelector(".search-box"),
+        modeSwitch = body.querySelector(".toggle-switch"),
+        modeText = body.querySelector(".mode-text");
+
+      toggle.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+      });
+
+      searchBtn.addEventListener("click", () => {
+        sidebar.classList.remove("close");
+      });
+
+      modeSwitch.addEventListener("click", () => {
+        body.classList.toggle("dark");
+
+        if (body.classList.contains("dark")) {
+          modeText.innerText = "Light mode";
+        } else {
+          modeText.innerText = "Dark mode";
+        }
+      });
+    </script>
+
+    <!-- footer side  -->
+  </body>
+</html>

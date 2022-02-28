@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/footer.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/default.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/highlight.js@11.4.0/styles/github-dark.css"
+    />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.4.0/styles/school-book.css"/> -->
+  </head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .container {
+      display: grid;
+      grid-gap: 11px;
+      grid-template-columns: repeat(auto-fit, 309px);
+      grid-template-rows: repeat(2, 492px);
+      justify-content: space-around;
+    }
+    .bottombtn {
+      width: 66px;
+      background-color: black;
+      color: white;
+      text-align: center;
+      height: auto;
+      border: sodi;
+      border: solid;
+      border-radius: 50%;
+      float: right;
+      position: fixed;
+      bottom: 28px;
+      right: 22px;
+    }
+    .bottombtn1 {
+      display: none;
+    }
+    @media screen and (max-width: 800px) {
+      .rightcont {
+        display: none;
+      }
+      .open {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-color: #4caf50;
+        transition: var(--transition);
+        z-index: 10;
+        display: block;
+      }
+      .bottombtn1 {
+        width: 66px;
+        background-color: black;
+
+        text-align: center;
+        height: 63px;
+        border: solid;
+        border-radius: 50%;
+        float: right;
+        position: fixed;
+        bottom: 28px;
+        right: 22px;
+        display: block;
+      }
+    }
+    .btn {
+      background: none;
+      border: none;
+      margin-top: 9px;
+      color: white;
+    }
+  </style>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="logo">ASSOY</div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Log-In</a></li>
+      </ul>
+    </nav>
+
+    <div class="bottombtn">
+      <button class="btn">
+        <h1><span style="font-size: 36px">&#x1F4A1;</span></h1>
+      </button>
+    </div>
+
+    <!-- tutorial left side  -->
+
+    <div class="container">
+      <div class="leftcont">
+        <div class="header">
+          <p style="color: #7f7f7f">Java-OOPS</p>
+
+          <hr width="170px" />
+          <div class="hello">
+            <h2><b>Introduction to Java</b></h2>
+          </div>
+          <div class="info">
+            <p >
+                JAVA was developed by James Gosling at Sun Microsystems Inc in the year
+                1991, later acquired by Oracle Corporation. It is a simple programming language.
+                 It is owned by Oracle, and more than 3 billion devices run Java.
+                 <br />
+                 <br>
+
+                <h4> Why to use java :</h4>
+                <ul style="font-family: sans-serif;
+                font-size: 21px;">
+                  <li> Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
+                  <li>	It is secure, fast and powerful</li>
+                  <li> It is open-source and free</li>
+                  <li>	Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs</li>
+                </ul>
+      
+            </p>
+          </div>
+          <div class="start" style="color: #7f7f7f">
+            Here is the first progem of java<br /><br />
+            The simplest JAVA program will help you get started. <br />
+            Here it is:
+          </div>
+        </div>
+
+        <br />
+
+        
+        <div class="code-info">
+          It displays a heading saying “Hello, world!” as a output.
+        </div>
+
+        <br /><br />
+        <footer>
+          <div class="content">
+            <div class="left box">
+              <div class="upper">
+                <div class="topic">About us</div>
+                <p>
+                  Happy Coding Is the group Of 5 Members who are piro player In
+                  Coding and Future Entrepreneur of the decade.
+                </p>
+              </div>
+              <div class="lower">
+                <div class="topic">Contact us</div>
+                <div class="phone">
+                  <a href="#"><i class="fas fa-phone-volume"></i>1234567890</a>
+                </div>
+                <div class="email">
+                  <a href="#"><i class="fas fa-envelope"></i>@vit.edu</a>
+                </div>
+              </div>
+            </div>
+            <div class="middle box">
+              <div class="topic">Menu</div>
+              <div><a href="#">12th Syallbus</a></div>
+              <div><a href="#">Under-Graduate Syallbus</a></div>
+              <div><a href="#">Career Guidance</a></div>
+            </div>
+            <div class="right box">
+              <div class="topic">Subscribe us</div>
+              <form action="#">
+                <input type="text" placeholder="Enter email address" />
+                <input type="submit" name="" value="Send" />
+                <div class="media-icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>
+              Copyright &#169; 2022 <a href="#">HappyCoding</a> All rights
+              reserved
+            </p>
+          </div>
+        </footer>
+      </div>
+
+      <!-- options of tutorial right side -->
+
+      <div class="rightcont">
+        <div class="bottombtn1">
+          <button class="btn">
+            <h1><span style="font-size: 25px">&#9587;</span></h1>
+          </button>
+        </div>
+
+        <h3>Lesson 1 Subtopic</h3>
+        <ol>
+          <li><a href="">Introduction of Java</a></li>
+          <li><a href=""> Java Installation</a></li>
+
+          <li><a href=""> Print in Java</a></li>
+          <li><a href=""> Input in Java</a></li>
+          <li><a href=""> Comments in Java</a></li>
+
+          <li><a href=""> Data Types in Java</a></li>
+          <li><a href=""> Arithatic operators</a></li>
+        </ol>
+        <a href="" style="color: black"> Lesson 2</a>
+      </div>
+    </div>
+
+    <style>
+      .rightcont {
+        flex: 4;
+        padding: 50px;
+        z-index: 2;
+        height: calc(100vh - 60px);
+        overflow-y: auto;
+        background-color: rgb(247, 247, 247);
+        opacity: 1 !important;
+        line-height: 29px;
+        height: 100vh;
+        transition: transform 0.5s ease 0s;
+      }
+      pre code.hljs {
+        display: block;
+        overflow-x: auto;
+        padding: 0px;
+        border-radius: 26px;
+      }
+      .rightcont h3 {
+        margin-top: 55px;
+        padding: 30px;
+      }
+      .rightcont ol li {
+        margin: 10px;
+        padding: 10px;
+        font-size: 19px;
+        font-family: system-ui;
+      }
+      .rightcont ol li a {
+        color: black;
+      }
+      .leftcont {
+        flex: 10;
+        width: 829px;
+        overflow: scroll;
+        line-height: 29px;
+        height: 100vh;
+      }
+      .leftcont .info p {
+        font-size: 20px;
+        font-family: system-ui;
+      }
+      .container {
+        display: flex;
+        min-height: calc(100vh - 60px);
+        margin-left: 10px;
+        margin-right: 0px;
+        justify-content: space-between;
+      }
+
+      .header {
+        padding-top: 90px;
+        padding-left: 63px;
+      }
+
+      .header p {
+        font-size: 30px;
+      }
+
+      .hello {
+        padding: 50px 50px 50px;
+        /* background-color: aqua; */
+        font-size: xx-large;
+      }
+
+      .code {
+        height: auto;
+        width: auto;
+        padding: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background: none;
+      }
+
+      .code-info {
+        padding-top: 20px;
+        padding-left: 90px;
+      }
+
+      .button {
+        border: none;
+        border-radius: 15px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        position: relative;
+      }
+      .button1 {
+        background-color: #4caf50;
+      }
+    </style>
+
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
+
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+  <script src="/course_page.js"></script>
+</html>

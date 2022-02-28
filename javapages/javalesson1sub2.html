@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/footer.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/default.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.4.0/styles/github-dark.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.4.0/styles/school-book.css"/> -->
+</head>
+<style>
+  .container {
+    display: grid;
+    grid-gap: 11px;
+    grid-template-columns: repeat(auto-fit, 309px);
+    grid-template-rows: repeat(2, 492px);
+    justify-content: space-around;
+  }
+
+  .bottombtn {
+    width: 66px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: auto;
+    border: sodi;
+    border: solid;
+    border-radius: 50%;
+    float: right;
+    position: fixed;
+    bottom: 28px;
+    right: 22px;
+  }
+
+  .bottombtn1 {
+    display: none;
+  }
+
+  @media screen and (max-width: 800px) {
+    .rightcont {
+      display: none;
+    }
+
+    .open {
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      background-color: #4caf50;
+      transition: var(--transition);
+      z-index: 10;
+      display: block;
+    }
+
+    .bottombtn1 {
+      width: 66px;
+      background-color: black;
+
+      text-align: center;
+      height: 63px;
+      border: solid;
+      border-radius: 50%;
+      float: right;
+      position: fixed;
+      bottom: 28px;
+      right: 22px;
+      display: block;
+    }
+  }
+
+  .btn {
+    background: none;
+    border: none;
+    margin-top: 9px;
+    color: white;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+<body>
+  <!-- navbar -->
+  <nav>
+    <div class="logo">ASSOY</div>
+    <input type="checkbox" id="click" />
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Log-In</a></li>
+    </ul>
+  </nav>
+
+  <div class="bottombtn">
+    <button class="btn">
+      <h1><span style="font-size: 36px">&#x1F4A1;</span></h1>
+    </button>
+  </div>
+
+  <!-- tutorial left side  -->
+
+  <div class="container">
+    <div class="leftcont">
+      <div class="header">
+        <p style="color: #7f7f7f">Java-OOPS</p>
+
+        <hr width="170px" />
+        <div class="hello">
+          <h2 id="sub1"><b>Introduction of Java</b></h2>
+        </div>
+
+        <!-- // lesson1 - subtopic 1 -->
+        <div class="info" id="i" >
+          <p>
+            JAVA was developed by James Gosling at Sun Microsystems Inc in the year
+             1991, later acquired by Oracle Corporation. It is a simple programming language.
+              It is owned by Oracle, and more than 3 billion devices run Java.
+            <br />
+           <br>
+                    <h4> Why to use java :</h4>
+          <ul>
+            <li> Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
+            <li>	It is secure, fast and powerful</li>
+            <li> It is open-source and free</li>
+            <li>	Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs</li>
+          </ul>
+
+          </p>
+        </div>
+        <!-- //lesson1 subtopic 1 -->
+
+
+
+
+        <div class="hello">
+          <h2 id="sub2"><b>Intallation of java </b></h2>
+        </div>
+
+        <!-- // lesson1 - subtopic 2 -->
+        <div class="info" >
+          <p>
+          To run a java program in Windows 10, we need first to install Java
+           and then set up the environment variables. To do this, follow the following steps-
+            <br />
+           <br>
+
+          <ol>
+            <li>	 Visit the oracle website and then click on download button of java language .</li>
+            <li>	Now, on the next page, click on Accept License Agreement and download the .exe file of
+              JDK for windows and for other operating according to system .</li>
+            <li>	After downloading the file, start the installation process by clicking on the file.</li>
+            <li>Keep clicking on next and don't alter any default setting.</li>
+            <li>Open the control panel -> System and Security -> System -> Advanced System Settings. </li>
+            <li>	Click on Environment Variables, go to system variables, and double click on Path.</li>
+            <li>	Now add the path of the bin file present in the JRE folder and the JDK folder to the Path variable.
+               The JRE and JDK are by default, present in the Java folder of Program Files.</li>
+               <li>	Now open the text editor which ever you want and now ou will be abe to run java program </li>
+          </ol>
+
+          </p>
+        </div>
+
+
+
+        <div class="start" style="color: #7f7f7f">
+          Here is the first progem of java<br /><br />
+          The simplest JAVA program will help you get started. <br />
+          Here it is:
+        </div>
+      </div>
+
+      <br />
+
+      <div class="code">
+          <pre><code>
+                        class HelloWorld
+                        {
+                            public static void main(String args[])
+                            {
+                                System.out.println("Hello World!");
+                            }
+                        }
+                </code></pre>
+        </div>
+        <div class="code-info">
+          It displays a heading saying “Hello, world!” as a output.
+        </div>
+
+          <!-- //lesson1 subtopic 2 -->
+
+
+
+          <div class="hello">
+            <h4 id="sub3"><b>How to run java on notepad </b></h4>
+          </div>
+
+<!-- //lesson1 subtopic 3 -->
+        <div class="info" >
+
+
+          <ul>
+            <li>	Write the java program on notepad </li>
+            <li>	Save this file with the .java extension. Make sure that the name
+              of the file should be the same as that of the public class.</li>
+            <li> Now, open the command prompt and open the directory in which we have
+              saved our program by using the following command.
+
+              <br>
+   Ex : cd desktop
+   <br>
+   <br>
+           </li>
+
+            <li>	Now, run the following command to compile the Java program.   javac  HelloWorld.java  </li>
+            <br>
+            <li> After the code is compiled, it generates a bytecode file in the same
+              folder having the .java file with a .class extension. This is the file which
+              is executed by the JRE. To run this file, use the following command
+              <br>
+  Ex:  java HelloWorld
+  <br>
+  <br>
+            </li>
+            <li>The output of the program will be seen on the command prompt.</li>
+            <li>	This is how we can run a java program on notepad .</li>
+
+          </ul>
+
+          </p>
+        </div>
+
+        <!-- //lesson1 subtopic 3 -->
+
+
+
+
+        <div class="hello">
+          <h4 id="sub4"><b>Input in java  </b></h4>
+        </div>
+        <!-- // lesson1 - subtopic 4 -->
+        <div class="info" >
+          <p>
+
+    Java brings various Streams with its I/O package that helps the user to perform all the input-output operations.
+                <br />
+           <br>
+
+        To take input from user we will first import Scanner class
+         from java.util pakage after that we have to make object og
+          that scanner class and then take input from user .
+    <br>
+    Ex : import java.util.Scanner
+          </p>
+          <br>
+          In built scanne function to take different data types of variable
+          <ul>
+            <li>	Integer: nextInt()</li>
+            <li>	Float: nextFloat()</li>
+            <li>	String : nextLine()</li>
+          </ul>
+        </div>
+
+        <br>
+        <br>
+        <div class="code">
+            <pre><code>
+              import java.util.*;
+
+                         class ASSOY{
+
+                            public static void main( String[] args )
+                   {
+
+                        // Scanner definition
+                       Scanner sc= new Scanner(System.in);
+
+                      // input is a string
+                      String str= scn.nextLine();
+                      System.out.println("Entered String : "+ str);
+
+                       // input is an Integer
+                       int x= scn.nextInt();
+                       System.out.println("Entered Integer : "+ x);
+
+                      }
+                      }
+
+                  </code></pre>
+          </div>
+          <div class="code-info">
+            It displays that how take input from user
+          </div>
+
+          <!-- // lesson1 - subtopic 4 -->
+
+
+
+          <div class="hello">
+            <h4 id="sub5"><b>Comments in java  </b></h4>
+          </div>
+          <!-- //lesson1 subtopic 5 -->
+                  <div class="info" >
+
+
+                  <p>	Single line
+Single-line comments start with two forward slashes (//)
+<br>
+
+Ex:   // This is a comment
+<br>
+</p>
+             <br >
+          <p>
+            	Multiline
+ Multi-line comments start with /* and ends with */.
+
+ <br>
+     Ex: /* The code below will print the words Hello World
+             to the screen, and it is amazing */
+             <br>
+             <br>
+
+          </p>
+
+                  </div>
+
+                  <!-- //lesson1 subtopic 5 -->
+
+
+                  <div class="hello">
+                    <h4 id="sub6"><b>Data types in java  </b></h4>
+                  </div>
+                  <!-- //lesson1 subtopic 6 -->
+                          <div class="info" >
+
+
+                            <ul>
+                              <li>		boolean data type </li>
+                              <li>		char data type</li>
+                              <li> 	short data type</li>
+
+                              <li>		int data type</li>
+
+                              <li> 	long data type</li>
+                              <li>	float data type</li>
+
+
+                            </ul>
+
+                            </p>
+                            <table border = "1" cellpadding = "5" cellspacing = "5">
+         <tr>
+            <th>Data Type</th>
+            <th>Default Value</th>
+            <th>Default size</th>
+         </tr>
+         <tr>
+            <td>boolean</td>
+              <td>false</td>
+              <td>1 bit </td>
+         </tr>
+         <tr>
+            <td>char </td>
+              <td>'\u0000'</td>
+              <td>2 byte  </td>
+         </tr>
+         <tr>
+            <td>byte </td>
+              <td>0</td>
+              <td>1 byte</td>
+         </tr>
+         <tr>
+            <td>short</td>
+              <td>0</td>
+              <td>2 byte</td>
+         </tr>
+         <tr>
+            <td>int</td>
+              <td>0</td>
+              <td>4 byte</td>
+         </tr>
+         <tr>
+            <td>float</td>
+              <td>0.0</td>
+              <td>4 byte</td>
+         </tr>
+      </table>
+                          </div>
+
+                          <!-- //lesson1 subtopic 6 -->
+
+      <br /><br />
+
+
+
+      <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>
+                Happy Coding Is the group Of 5 Members who are piro player In
+                Coding and Future Entrepreneur of the decade.
+              </p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>1234567890</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>@vit.edu</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Menu</div>
+            <div><a href="#">12th Syallbus</a></div>
+            <div><a href="#">Under-Graduate Syallbus</a></div>
+            <div><a href="#">Career Guidance</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address" />
+              <input type="submit" name="" value="Send" />
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>
+            Copyright &#169; 2022 <a href="#">HappyCoding</a> All rights
+            reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- options of tutorial right side -->
+
+    <div class="rightcont">
+      <div class="bottombtn1">
+        <button class="btn">
+          <h1><span style="font-size: 25px">&#9587;</span></h1>
+        </button>
+      </div>
+
+      <h3>Lesson 1 Subtopic</h3>
+      <ol>
+        <li><a href="#info">Introduction of Java</a></li>
+        <li><a href="#sub2"> Java Installation</a></li>
+
+        <li><a href="#sub3"> Print in Java</a></li>
+        <li><a href="#i"> Input in Java</a></li>
+        <li><a href="#sub5"> Comments in Java</a></li>
+
+        <li><a href="#sub6"> Data Types in Java</a></li>
+      
+      </ol>
+      <a href="" style="color: black"> Lesson 2</a>
+    </div>
+  </div>
+
+  <style>
+    body{
+      scroll-behavior: smooth;
+    }
+    .rightcont {
+      flex: 4;
+      padding: 50px;
+      z-index: 2;
+      height: calc(100vh - 60px);
+      overflow-y: auto;
+      background-color: rgb(247, 247, 247);
+      opacity: 1 !important;
+      line-height: 29px;
+      height: 100vh;
+      transition: transform 0.5s ease 0s;
+    }
+
+    pre code.hljs {
+      display: block;
+      overflow-x: auto;
+      padding: 0px;
+      border-radius: 26px;
+    }
+
+    .rightcont h3 {
+      margin-top: 55px;
+      padding: 30px;
+    }
+
+    .rightcont ol li {
+      margin: 10px;
+      padding: 10px;
+      font-size: 19px;
+      font-family: system-ui;
+    }
+
+    .rightcont ol li a {
+      color: black;
+    }
+
+    .leftcont {
+      flex: 10;
+      width: 829px;
+      overflow: scroll;
+      line-height: 29px;
+      height: 100vh;
+    }
+
+    .leftcont .info p {
+      font-size: 20px;
+      font-family: system-ui;
+    }
+
+    .container {
+      display: flex;
+      min-height: calc(100vh - 60px);
+      margin-left: 10px;
+      margin-right: 0px;
+      justify-content: space-between;
+    }
+
+    .header {
+      padding-top: 90px;
+      padding-left: 63px;
+    }
+
+    .header p {
+      font-size: 30px;
+    }
+
+    .hello {
+      padding: 50px 50px 50px;
+      /* background-color: aqua; */
+      font-size: xx-large;
+    }
+
+    .code {
+      height: auto;
+      width: auto;
+      padding: 0px;
+      margin-left: 20px;
+      margin-right: 20px;
+      background: none;
+    }
+
+    .code-info {
+      padding-top: 20px;
+      padding-left: 90px;
+    }
+
+    .button {
+      border: none;
+      border-radius: 15px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .button1 {
+      background-color: #4caf50;
+    }
+  </style>
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
+
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+<script src="course_page.js"></script>
+
+</html>

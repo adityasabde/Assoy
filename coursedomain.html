@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course domain</title>
+    <!-- <link rel="stylesheet" href="/path/to/flickity.css" media="screen"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+
+
+        .butons-scroll {
+            position: sticky;
+            z-index: 1;
+            top: 30%;
+        }
+
+        .p-img {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        img {
+            width: 114px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .p-img p {
+            font-size: 17px;
+            padding-top: 26px;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        .message {
+            margin: 24px;
+            font-size: 17px;
+            font-family: 'Akaya Telivigala', cursive;
+        }
+
+        .message p {
+            font-family: 'Prompt', sans-serif;
+        }
+
+        span:nth-of-type(2) {
+            left: 98%;
+            text-align: right;
+        }
+
+        span {
+            position: absolute;
+            top: 172%;
+            font-size: 60px;
+            font-weight: bold;
+            color: black;
+            cursor: pointer;
+            left: .5%;
+            z-index: 1;
+        }
+
+        main {
+            width: 100%;
+            height: 500px;
+            margin: 0px auto;
+            overflow: hidden;
+        }
+
+        h1 {
+            margin: 5px;
+            padding: 5px;
+            width: 90%;
+            margin: 10px auto;
+            text-align: center;
+            font-family: 'Prompt', sans-serif;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        section {
+            width: 95%;
+            height: 500px;
+
+            margin: 10px auto;
+            display: flex;
+            justify-content: left;
+
+        }
+
+        section::webkit-scrollbar {
+            visibility: hidden;
+        }
+
+        .div {
+            clear: both;
+            min-width: 381px;
+            height: 351px;
+            position: relative;
+            left: 0;
+            text-align: center;
+            padding-top: 21px;
+            font-size: 100px;
+            font-weight: bold;
+            margin: 10px 20px;
+            color: black;
+            background-color: white;
+            transition: 0.5s;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+
+        .div:hover {
+            transform: scale(1.05);
+        }
+
+        /* courses info */
+        .content {
+            text-align: center;
+            font-size: 18px;
+            margin: 10px;
+            padding: 20px;
+            padding-left: 87px;
+            padding-right: 75px;
+        }
+
+        /* poster css */
+        .vl {
+            border-left: 1.7px solid whitesmoke;
+            height: 20px;
+        }
+
+        #poster-head {
+            font-size: 34px;
+            font-family: sans-serif;
+        }
+
+        .btn {
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .in-fo1 {
+            height: auto;
+            background-color: rgb(4, 187, 4);
+            padding: 8px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .in-fo2 {
+            height: auto;
+            background-color: #007bff;
+            padding: 8px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .in-fo3 {
+            height: auto;
+            background-color: rgb(255, 132, 0);
+            padding: 8px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .cont1 {
+            color: black;
+
+            text-align: center center;
+            /* height: 240px; */
+            padding: 8px;
+            height: auto;
+            background-image: url('bg1.jpg');
+            /* background-size: auto; */
+            background-repeat: no-repeat;
+            background-size: 250px 250px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .cont1 p {
+            margin: 2px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        #p-info {
+            font-size: 15px;
+            font-weight: 100;
+            margin: 14px;
+        }
+
+        .cont1 img {
+            border-radius: 50%;
+            width: 80px;
+            height: auto;
+            border: solid green;
+            border-width: 3px;
+        }
+
+        .mem {
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+            transition: 0.3s;
+            border-radius: 5px;
+            text-align: center;
+            padding: 18px;
+            height: 257px;
+            width: 328px;
+
+        }
+
+        .mem:hover {
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            transform: scale(1.05);
+        }
+
+        .mem .in-fo button {
+            font-size: 15px;
+            font-family: none;
+            align-items: baseline;
+        }
+
+
+        .full {
+            padding-top: 45PX;
+            background-color: white;
+            display: grid;
+            grid-gap: 11px;
+            grid-template-columns: repeat(auto-fit, 285px);
+            grid-template-rows: repeat(1, 273px);
+            justify-content: space-around;
+            resize: horizontal;
+    overflow: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">ASSOY</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Log-In</a></li>
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+    <!-- poster section -->
+    <div class="poster">
+        <center>
+            <h1 id="poster-head">Our Free Courses</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </center>
+        <div class="full">
+
+            <div class="mem">
+                <div class="cont1">
+                    <img src="img/img8.png" alt="img">
+
+                    <p>11th/12th</p>
+                    <p id="p-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quaerat.</p>
+
+                </div>
+
+                <hr>
+
+                <div class="in-fo1">
+                    <button class="btn" id="b">INFO&nbsp;</button>
+                    <div class="vl"></div>
+                    <a href="profile.html"><button class="btn">ENROLL</button></a>
+                </div>
+            </div>
+            <div class="mem">
+                <div class="cont1">
+                    <img src="img/img8.png" alt="img">
+                    <p>B.E./B.TECH</p>
+                    <p id="p-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quaerat.</p>
+                </div>
+                <hr>
+                <div class="in-fo2">
+                    <button class="btn" id="b">INFO&nbsp;</button>
+                    <div class="vl"></div>
+                    <a href="profile.html"><button class="btn">ENROLL</button></a>
+                </div>
+            </div>
+            <div class="mem">
+                <div class="cont1">
+                    <img src="img/img8.png" alt="img">
+                    <p>Guidance</p>
+                    <p id="p-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quaerat.</p>
+                </div>
+                <hr>
+                <div class="in-fo3">
+                    <button class="btn"id="b">INFO&nbsp;</button>
+                    <div class="vl"></div>
+                    <a href="profile.html"><button class="btn">ENROLL</button></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <br><br><br>
+
+
+
+
+    <div class="content">
+        <h1>Courses information</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptas eius dolor illum a nobis, vitae
+        quidem consequatur neque facere enim optio accusamus excepturi laboriosam totam iure quibusdam temporibus
+        asperiores voluptates nisi. Maxime quidem magnam voluptatum sint quo ad dolore, nobis saepe, harum corrupti
+        ducimus labore exercitationem eos earum veniam architecto culpa consequatur placeat. Inventore, eum minima
+        adipisci tempora ea quisquam quos. Aspernatur laudantium dolor beatae magni veritatis assumenda, accusamus
+        asperiores harum amet consequuntur fugia
+        t culpa tenetur cupiditate eum, repellat porro error ipsa consectetur nobis ducimus corrupti velit. Aspernatur
+        veritatis, minima quod fuga reprehenderit nihil esse minus error accusamus quos?
+
+    </div>
+
+    <br><br><br>
+    <!-- Reviews section -->
+    <main>
+        <h1>Our Reviews</h1>
+        <div class="butons-scroll">
+            <span>&#139;</span>
+            <span>&#155;</span>
+        </div>
+
+        <section>
+            <div class="div">
+                <div class="header">
+                    <div class="p-img">
+                        <img src="img/img2.jpg" alt="image">
+                        <p>Name : Aditya Sabde <br>
+                            Student at VIT , Pune</p>
+                    </div>
+                    <div class="message">
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Provident, ipsum?
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit ipsam neque cumque
+                            asperiores odio. Corporis, alias doloremque. Cumque, voluptatum repudiandae?</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="div">
+                <div class="header">
+                    <div class="p-img">
+                        <img src="img/img5.jpg" alt="image">
+                        <p>Name : Siddhesh Wani <br>
+                            Student at VIT , Pune</p>
+                    </div>
+                    <div class="message">
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Provident, ipsum?
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit ipsam neque cumque
+                            asperiores odio. Corporis, alias doloremque. Cumque, voluptatum repudiandae?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="div">
+                <div class="header">
+                    <div class="p-img">
+                        <img src="img/img3.png" alt="image">
+                        <p>Name : Sanjyot Kotgire <br>
+                            Student at VIT , Pune</p>
+                    </div>
+                    <div class="message">
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Provident, ipsum?
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit ipsam neque cumque
+                            asperiores odio. Corporis, alias doloremque. Cumque, voluptatum repudiandae?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="div">
+                <div class="header">
+                    <div class="p-img">
+                        <img src="img/img7.jpg" alt="image">
+                        <p>Name :Omkar Rasal <br>
+                            Student at VIT , Pune</p>
+                    </div>
+                    <div class="message">
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Provident, ipsum?
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit ipsam neque cumque
+                            asperiores odio. Corporis, alias doloremque. Cumque, voluptatum repudiandae?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="div">
+                <div class="header">
+                    <div class="p-img">
+                        <img src="img/img3.png" alt="image">
+                        <p>Name : Yogesh Rasal <br>
+                            Student at VIT , Pune</p>
+                    </div>
+                    <div class="message">
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Provident, ipsum?
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit ipsam neque cumque
+                            asperiores odio. Corporis, alias doloremque. Cumque, voluptatum repudiandae?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="div">
+                <div class="header">
+                    <div class="p-img">
+                        <img src="img/img3.png" alt="image">
+                        <p>Name : Omkar Rasal <br>
+                            Student at VIT , Pune</p>
+                    </div>
+                    <div class="message">
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Provident, ipsum?
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit ipsam neque cumque
+                            asperiores odio. Corporis, alias doloremque. Cumque, voluptatum repudiandae?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="div">
+                <div class="header">
+                    <div class="p-img">
+                        <img src="img/img6.jpg" alt="image">
+                        <p>Name : Yogesh Rasal <br>
+                            Student at VIT , Pune</p>
+                    </div>
+                    <div class="message">
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Provident, ipsum?
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit ipsam neque cumque
+                            asperiores odio. Corporis, alias doloremque. Cumque, voluptatum repudiandae?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="div">
+                <div class="header">
+                    <div class="p-img">
+                        <img src="img/img2.jpg" alt="image">
+                        <p>Name : Sanjyot Kotgire <br>
+                            Student at VIT , Pune</p>
+                    </div>
+                    <div class="message">
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Provident, ipsum?
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit ipsam neque cumque
+                            asperiores odio. Corporis, alias doloremque. Cumque, voluptatum repudiandae?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="div">
+                <div class="header">
+                    <div class="p-img">
+                        <img src="img/img3.png" alt="image">
+                        <p>Name :Siddhesh Wani <br>
+                            Student at VIT , Pune</p>
+                    </div>
+                    <div class="message">
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Provident, ipsum?
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit ipsam neque cumque
+                            asperiores odio. Corporis, alias doloremque. Cumque, voluptatum repudiandae?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="div">
+                <div class="header">
+                    <div class="p-img">
+                        <img src="img/img4.png" alt="image">
+                        <p>Name : Aditya Sabde <br>
+                            Student at VIT , Pune</p>
+                    </div>
+                    <div class="message">
+                        <p>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Provident, ipsum?
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit ipsam neque cumque
+                            asperiores odio. Corporis, alias doloremque. Cumque, voluptatum repudiandae?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <br><br><br><br>
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="content">
+            <div class="left box">
+                <div class="upper">
+                    <div class="topic">About us</div>
+                    <p>Happy Coding Is the group Of 5 Members who are piro player In Coding
+                        and Future Entrepreneur of the decade.</p>
+                </div>
+                <div class="lower">
+                    <div class="topic">Contact us</div>
+                    <div class="phone">
+                        <a href="#"><i class="fas fa-phone-volume"></i>1234567890</a>
+                    </div>
+                    <div class="email">
+                        <a href="#"><i class="fas fa-envelope"></i>@vit.edu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle box">
+                <div class="topic">Menu</div>
+                <div><a href="#">12th Syallbus</a></div>
+                <div><a href="#">Under-Graduate Syallbus</a></div>
+                <div><a href="#">Career Guidance</a></div>
+            </div>
+            <div class="right box">
+                <div class="topic">Subscribe us</div>
+                <form action="#">
+                    <input type="text" placeholder="Enter email address">
+                    <input type="submit" name="" value="Send">
+                    <div class="media-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Copyright &#169; 2022 <a href="#">HappyCoding</a> All rights reserved</p>
+        </div>
+    </footer>
+
+
+    <div class="modal-overlay">
+        <div class="modalcontainer">
+            <div class="button">
+                <button class="close-btn">
+                    <i class="fas fa-times">&times;</i>
+                </button>
+            </div>
+            <div class="content">
+                <div class="contentHead">
+                    <h3 style="padding-top: 22px;
+                                font-size: 21px;
+                                font-family: sans-serif;">Course Detailes
+                    </h3>
+                    <img src="img/img9.png" alt="syllabus">
+                </div>
+                <div class="list" style="font-size: 20px; padding: 20px; font-family: sans-serif;">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        .contentHead {
+            display: flex;
+            justify-content: space-between;
+           
+        }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(73, 166, 233, 0.5);
+            display: grid;
+            place-items: center;
+            transition: var(--transition);
+            visibility: hidden;
+            z-index: 10;
+           
+        }
+
+        .open-modal {
+            visibility: visible;
+        }
+
+        .modalcontainer {
+            background-color: white;
+            padding: 40px;
+            margin: 10px;
+            margin-left: 464px;
+            margin-right: 473px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-overlay .content {
+            margin: 2px;
+            padding: 15px;
+            padding-top: 0;
+            margin-bottom: 0;
+            width: 300px;
+            height: auto;
+            text-align: center;
+        }
+
+        .button {
+            float: right;
+            margin: 2px;
+            padding: 2px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .fa,
+        .fas {
+            font-weight: 300;
+        }
+
+        .close-btn {
+            background: none;
+            font-size: 30px;
+            border: none;
+            float: right;
+            font-weight: 200;
+        }
+
+        .close-btn:hover {
+            cursor: pointer;
+
+        }
+    </style>
+
+</body>
+<script src="courrsedomain.js"></script>
+
+</html>

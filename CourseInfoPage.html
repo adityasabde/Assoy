@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <style>
+      
+      html {
+        scroll-behavior: smooth;
+      }
+      .head {
+        display: flex;
+        margin: 0px;
+        padding: 48px;
+        justify-content: space-evenly;
+        background-color: rgb(66, 133, 244);
+        color: white;
+      }
+      .head1 h2 {
+        font-weight: 700;
+        font-size: 41px;
+        font-family: sans-serif;
+        padding: 4px;
+      }
+      .head1 p {
+        padding: 4px;
+        font-size: 19px;
+        font-family: sans-serif;
+      }
+      .head1 button {
+        align-items: center;
+        margin: 13px;
+        padding: 9px;
+        width: 174px;
+        height: auto;
+        font-size: 18px;
+        font-weight: 700;
+        background-color: rgb(255, 255, 0);
+        cursor: pointer;
+      }
+      .head2 p {
+        font-size: 42px;
+        font-family: sans-serif;
+        padding: 7px;
+      }
+      .option {
+        font-size: 18px;
+        margin: 10px;
+        padding: 10px;
+        font-weight: 700;
+        display: flex;
+      }
+      .option a {
+        text-decoration: none;
+        color: black;
+        padding: 18px;
+        padding-left: 43px;
+      }
+      .aboutcourse h2 {
+        margin: 11px;
+        padding: 11px;
+        padding-left: 39px;
+        font-size: 27px;
+        font-family: sans-serif;
+      }
+      .aboutcourse p {
+        margin: 10px;
+        padding-left: 47px;
+        padding-right: 47px;
+        font-size: 17px;
+        font-family: sans-serif;
+      }
+      .skills {
+        margin: 27px;
+        padding: 33px;
+      }
+      .skills h2 {
+        font-size: 25px;
+        font-weight: 600;
+        font-family: sans-serif;
+      }
+      .skillsbadge {
+        display: flex;
+      }
+      .skillsbadge p {
+        margin: 20px;
+        width: 128px;
+        text-align: center;
+        padding: 10px;
+        background-color: rgb(218, 217, 217);
+        border-radius: 26px;
+        font-family: system-ui;
+      }
+      .bottom {
+        margin: 27px;
+        padding: 33px;
+      }
+      .bottom h2 {
+        font-size: 25px;
+        font-weight: 600;
+        font-family: sans-serif;
+      }
+      .bottom .lessoncontainer {
+        margin: 9px;
+        padding: 10px;
+        display: grid;
+        align-content: space-between;
+      }
+      .lessons {
+        font-size: 21px;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin: 10px;
+        padding: 11px;
+        padding-left: 50px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        cursor: pointer;
+        border-radius: 10px;
+        clear: both;
+      }
+      .lessons:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      .subdiv {
+        height: auto;
+    padding: 13px;
+    margin-left: 3px;
+    padding-left: 93px;
+    background-color: rgb(252, 250, 250);
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    border-radius: 11px;
+      }
+      .sublesson h3 {
+        font-size: 19px;
+        font-family: sans-serif;
+        font-weight: 600;
+        padding: 10px;
+        padding-left: 0px;
+      }
+      .sublesson {
+        display: none;
+      }
+      .subdiv li {
+        font-size: 18px;
+        font-weight: 500;
+        font-family: sans-serif;
+      }
+      .subtopic {
+        visibility: visible;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="logo">ASSOY</div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Log-In</a></li>
+      </ul>
+    </nav>
+    <!-- header part  -->
+
+    <div class="head">
+      <div class="head1">
+        <h2>Java Full Course</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, est?
+        </p>
+        <div class="btn">
+          <a href="javapages/javalesson1.html"><button>Start Course <br />Date 23-2-2022</button></a>
+          <h3>99,980 Enrolled already</h3>
+        </div>
+      </div>
+      <div class="head2">
+        <h2>
+          Offered By <br />
+          <p>ASSOY</p>
+        </h2>
+      </div>
+    </div>
+
+    <div class="middle">
+      <div class="option">
+        <a href="#2">Lessons</a>
+        <a href="#1">About Course</a>
+      </div>
+
+      <div id="1" class="aboutcourse">
+        <h2>About Course</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis beatae
+          sunt aspernatur distinctio maxime error quaerat asperiores in voluptas
+          dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+          beatae sunt aspernatur distinctio maxime error quaerat asperiores in
+          voluptas dicta. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Quis beatae sunt aspernatur distinctio maxime error quaerat
+          asperiores in voluptas dicta. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Quis beatae sunt aspernatur distinctio maxime error
+          quaerat asperiores in voluptas dicta.
+        </p>
+      </div>
+      <div class="skills">
+        <div class="title"><h2>Skills You Will Gain</h2></div>
+        <div class="skillsbadge">
+          <p>Java Language</p>
+          <p>Core Java</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="2"class="bottom">
+      <div class="lessonhead"><h2>Lessons</h2></div>
+      <div class="lessoncontainer">
+
+        <div class="l">
+          <div id="a" class="lessons">Lesson 1</div>
+
+          <span class="sublesson">
+            <div class="subdiv">
+            <h3>Sub Topics Which Will Covers In this Lesson</h3>
+            <ul type="circle">
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            </div>
+          </span>
+        </div>
+
+        <div class="l">
+          <div class="lessons">Lesson 2</div>
+         
+            <span class="sublesson">
+              <div class="subdiv">
+                <h3>Sub Topics Which Will Covers In this Lesson</h3>
+                <ul type="circle">
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+              </div>
+            </span>
+        </div>
+
+
+        <div class="l">
+          <div class="lessons">Lesson 3</div>
+
+          <span class="sublesson">
+            <div class="subdiv">
+              <h3>Sub Topics Which Will Covers In this Lesson</h3>
+              <ul type="circle">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
+          </span>
+        </div>
+
+        <div class="l">
+          <div class="lessons">Lesson 4</div>
+
+          <span class="sublesson">
+            <div class="subdiv">
+              <h3>Sub Topics Which Will Covers In this Lesson</h3>
+              <ul type="circle">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
+          </span>
+        </div>
+
+        <div class="l">
+          <div class="lessons">Lesson 5</div>
+
+          <span class="sublesson">
+            <div class="subdiv">
+              <h3>Sub Topics Which Will Covers In this Lesson</h3>
+              <ul type="circle">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
+          </span>
+        </div>
+
+        <div class="l">
+          <div class="lessons">Lesson 6</div>
+
+          <span class="sublesson">
+            <div class="subdiv">
+              <h3>Sub Topics Which Will Covers In this Lesson</h3>
+              <ul type="circle">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
+          </span>
+        </div>
+
+        <div class="l">
+          <div class="lessons">Lesson 7</div>
+
+          <span class="sublesson">
+            <div class="subdiv">
+              <h3>Sub Topics Which Will Covers In this Lesson</h3>
+              <ul type="circle">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- footer part -->
+    <footer>
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic">About us</div>
+            <p>Happy Coding Is the group Of 5 Members who are piro player In Coding 
+             and Future Entrepreneur of the decade.</p>
+          </div>
+          <div class="lower">
+            <div class="topic">Contact us</div>
+            <div class="phone">
+              <a href="#"><i class="fas fa-phone-volume"></i>1234567890</a>
+            </div>
+            <div class="email">
+              <a href="#"><i class="fas fa-envelope"></i>@vit.edu</a>
+            </div>
+          </div>
+        </div>
+        <div class="middle box">
+          <div class="topic">Menu</div>
+          <div><a href="#">12th Syallbus</a></div>
+          <div><a href="#">Under-Graduate Syallbus</a></div>
+          <div><a href="#">Career Guidance</a></div>
+        </div>
+        <div class="right box">
+          <div class="topic">Subscribe us</div>
+          <form action="#">
+            <input type="text" placeholder="Enter email address">
+            <input type="submit" name="" value="Send">
+            <div class="media-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>Copyright &#169; 2022 <a href="#">HappyCoding</a> All rights reserved</p>
+      </div>
+    </footer>
+
+  </body>
+  <script src="coursepage.js"></script>
+</html>
